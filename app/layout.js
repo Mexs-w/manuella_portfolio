@@ -14,7 +14,7 @@ const luckiestGuy = Luckiest_Guy({
 });
 
 export const metadata = {
-  title: "Kingdom Creativity",
+  title: "Osazuwa Manuela",
   description: "I Craft Designs & Grow Brands",
 };
 

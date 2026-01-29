@@ -49,7 +49,7 @@ const About = ({page}) => {
             className="order-2 md:order-2"
           >
             <p className="font-body text-lg md:text-xl leading-relaxed mb-8 max-w-xl order2">
-              My name is Manuella, a creative graphics designer and social media
+              My name is Osazuwa Manuela Oghogho, a creative graphics designer and social media
               manager with experience in visual design, content creation,
               copywriting, and social media strategy. I help brands build a
               strong online presence through thoughtful design and engaging
