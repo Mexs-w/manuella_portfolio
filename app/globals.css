@@ -8,14 +8,20 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-body: var(--font-roboto-condensed);
+  --font-heading: var(--font-luckiest-guy);
+  --color-primary: var(--primary);
+  --color-dark-primary: var(--dark-primary);
+  --color-secondary: var(--secondary);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F5F0FA;
+    --foreground: #0a0a0a;
+    --primary: #5B2D8B;
+    --dark-primary: #2A0E44;
+    --secondary: #F5C400;
   }
 }
 
@@ -23,4 +29,12 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+  @apply font-heading
+}
+
+p,label,input{
+  @apply font-body
 }

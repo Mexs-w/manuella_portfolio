@@ -1,20 +1,16 @@
 import React from 'react'
 import Nav from '@/components/Nav'
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Services from '@/components/Services'
 import Works from '@/components/Works'
 import Footer from '@/components/Footer'
+import Services from '@/components/Services'
 
 const page = () => {
   return (
     <div>
-      <Nav />
-      <Hero />
-      <About />
-      <Services />
-      <Works />
-      <Footer />
+        <Nav />
+        <Works page={true} />
+        <Services />
+        <Footer />
     </div>
   )
 }
