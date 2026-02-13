@@ -1,8 +1,15 @@
-import { Roboto_Condensed, Luckiest_Guy } from "next/font/google";
+import { Roboto_Condensed, Luckiest_Guy, Montserrat } from "next/font/google";
 import "./globals.css";
+// import { Montserrat } from "next/font/google";
 
 const robotoCondensed = Roboto_Condensed({
   variable: "--font-roboto-condensed",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"]
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"]
 });
@@ -22,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${luckiestGuy.variable} ${robotoCondensed.variable} antialiased`}
+        className={`${luckiestGuy.variable} ${robotoCondensed.variable} ${montserrat.variable} antialiased`}
       >
         {children}
       </body>

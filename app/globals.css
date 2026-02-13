@@ -9,7 +9,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-body: var(--font-roboto-condensed);
-  --font-heading: var(--font-luckiest-guy);
+  --font-heading: var(--font-montserrat);
+  --font-heading-2: var(--font-luckiest-guy);
   --color-primary: var(--primary);
   --color-dark-primary: var(--dark-primary);
   --color-secondary: var(--secondary);
@@ -32,7 +33,7 @@ body {
 }
 
 h1,h2,h3,h4,h5{
-  @apply font-heading
+  @apply font-heading font-black
 }
 
 p,label,input{
