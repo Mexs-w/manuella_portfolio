@@ -53,7 +53,7 @@ const Hero = () => {
               variants={item}
               className="font-heading text-4xl md:text-6xl leading-tight max-w-3xl text-center md:text-start"
             >
-              I’m <span className="text-primary">Manuella</span>,<br />
+              I’m <span className="text-primary">Manuela</span>,<br />
               I Craft Designs & Grow Brands
             </motion.h2>
 
