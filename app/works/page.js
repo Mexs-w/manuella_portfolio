@@ -6,7 +6,7 @@ import Services from '@/components/Services'
 
 const page = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
         <Nav />
         <Works page={true} />
         <Services />
