@@ -3,6 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import Marquee from 'react-fast-marquee'
 
 const container = {
   hidden: {},
@@ -94,7 +95,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 80, scale: 0.9 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="flex justify-center md:justify-end"
+            className="hidden md:flex justify-center md:justify-end"
           >
             <img
               src="/assets/hero-img.png"
@@ -104,7 +105,46 @@ const Hero = () => {
           </motion.div>
 
         </div>
+        <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+      //   viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="flex flex-col md:flex-row items-center gap-6 rounded-3xl bgwhite shadowsm px-6 md:px-10 my-8 py-5"
+      >
+        <div className="w-full overflow-hidden">
+          <Marquee
+            className="w-full"
+            pauseOnHover
+            gradient={false}
+            direction='right'
+          >
+            {[
+              "/assets/6.jpg",
+              "/assets/7.jpeg",
+              "/assets/8.jpeg",
+              "/assets/9.jpg",
+              "/assets/10.jpeg",
+              "/assets/11.jpeg",
+              "/assets/6.jpg",
+              "/assets/7.jpeg",
+              "/assets/8.jpeg",
+              "/assets/9.jpg",
+              "/assets/10.jpeg",
+              "/assets/11.jpeg",
+            ].map((image, i) => (
+              <img
+                key={i}
+                src={image}
+                alt="brand logo"
+                className="h-52 w-48 mx-6 lg:opacity-80 hover:opacity-100 transition object-cover rounded-[6px]"
+              />
+            ))}
+          </Marquee>
+        </div>
+      </motion.div>
       </div>
+      
     </section>
   )
 }

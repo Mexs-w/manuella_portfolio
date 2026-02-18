@@ -114,25 +114,28 @@ const About = ({page}) => {
                 "/assets/brands_logos/logoipsum.png",
                 "/assets/brands_logos/novak.webp",
                 "/assets/brands_logos/remys.png",
+                "/assets/brands_logos/GDP.jpeg",
                 "/assets/brands_logos/logoipsum.png",
                 "/assets/brands_logos/novak.webp",
                 "/assets/brands_logos/remys.png",
+                "/assets/brands_logos/GDP.jpeg",
                 "/assets/brands_logos/logoipsum.png",
                 "/assets/brands_logos/novak.webp",
-                "/assets/brands_logos/remys.png"
+                "/assets/brands_logos/remys.png",
+                "/assets/brands_logos/GDP.jpeg"
               ].map((image, i) => (
                 <img
                   key={i}
                   src={image}
                   alt="brand logo"
-                  className="h-10 mx-6 opacity-80 hover:opacity-100 transition"
+                  className="h-10 mx-6 lg:opacity-80 hover:opacity-100 transition"
                 />
               ))}
             </Marquee>
           </div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
         //   viewport={{ once: true }}
@@ -147,26 +150,29 @@ const About = ({page}) => {
               direction='right'
             >
               {[
-                "/assets/brand_promotion/1.jpg",
-                "/assets/brand_promotion/2.jpg",
-                "/assets/brand_promotion/3.jpg",
-                "/assets/brand_promotion/4.jpg",
-                "/assets/sms/5.jpg",
-                "/assets/sms/1.jpg",
-                "/assets/sms/2.jpg",
-                "/assets/sms/3.jpg",
-                "/assets/event_and_church/3.jpg",
+                "/assets/6.jpg",
+                "/assets/7.jpeg",
+                "/assets/8.jpeg",
+                "/assets/9.jpg",
+                "/assets/10.jpeg",
+                "/assets/11.jpeg",
+                "/assets/6.jpg",
+                "/assets/7.jpeg",
+                "/assets/8.jpeg",
+                "/assets/9.jpg",
+                "/assets/10.jpeg",
+                "/assets/11.jpeg",
               ].map((image, i) => (
                 <img
                   key={i}
                   src={image}
                   alt="brand logo"
-                  className="h-52 w-48 mx-6 opacity-80 hover:opacity-100 transition object-cover rounded-[6px]"
+                  className="h-52 w-48 mx-6 lg:opacity-80 hover:opacity-100 transition object-cover rounded-[6px]"
                 />
               ))}
             </Marquee>
           </div>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </section>

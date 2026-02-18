@@ -27,7 +27,7 @@ const Nav = () => {
         {/* Logo */}
         <Link href="/">
           <h2 className="font-body text-3xl font-semibold">
-            Ella<span className="text-primary">.</span>
+            OM<span className="text-primary">.</span>
           </h2>
         </Link>
 
