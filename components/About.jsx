@@ -135,7 +135,7 @@ const About = ({page}) => {
           </div>
         </motion.div>
 
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
         //   viewport={{ once: true }}
@@ -156,12 +156,20 @@ const About = ({page}) => {
                 "/assets/9.jpg",
                 "/assets/10.jpeg",
                 "/assets/11.jpeg",
+                "/assets/12.jpeg",
+                "/assets/13.jpeg",
+                "/assets/14.jpeg",
+                "/assets/15.jpeg",
                 "/assets/6.jpg",
                 "/assets/7.jpeg",
                 "/assets/8.jpeg",
                 "/assets/9.jpg",
                 "/assets/10.jpeg",
                 "/assets/11.jpeg",
+                "/assets/12.jpeg",
+                "/assets/13.jpeg",
+                "/assets/14.jpeg",
+                "/assets/15.jpeg"
               ].map((image, i) => (
                 <img
                   key={i}
@@ -172,7 +180,7 @@ const About = ({page}) => {
               ))}
             </Marquee>
           </div>
-        </motion.div> */}
+        </motion.div>
 
       </div>
     </section>

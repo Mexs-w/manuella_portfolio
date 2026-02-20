@@ -95,7 +95,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 80, scale: 0.9 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="hidden md:flex justify-center md:justify-end"
+            className="flex justify-center md:justify-end"
           >
             <img
               src="/assets/hero-img.png"
@@ -105,7 +105,7 @@ const Hero = () => {
           </motion.div>
 
         </div>
-        <motion.div
+        {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
       //   viewport={{ once: true }}
@@ -142,7 +142,7 @@ const Hero = () => {
             ))}
           </Marquee>
         </div>
-      </motion.div>
+      </motion.div> */}
       </div>
       
     </section>
