@@ -4,6 +4,12 @@ import React, { useState, useEffect } from 'react'
 import WorkCard from './uis/WorkCard'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -188,13 +194,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "ch"
         },
-        // {
-        //     title: "Some Text",
-        //     thumbnail: "/assets/sms/7.jpeg",
-        //     link: "/",
-        //     category: "graphics",
-        //     group: "sms"
-        // },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/7.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
         {
             title: "Some Text",
             thumbnail: "/assets/brand_promotion/8.jpeg",
@@ -209,20 +215,20 @@ const Works = ({page}) => {
             category: "graphics",
             group: "ch"
         },
-        // {
-        //     title: "Some Text",
-        //     thumbnail: "/assets/sms/8.jpeg",
-        //     link: "/",
-        //     category: "graphics",
-        //     group: "sms"
-        // },
-        // {
-        //     title: "Some Text",
-        //     thumbnail: "/assets/brand_promotion/9.jpeg",
-        //     link: "/",
-        //     category: "graphics",
-        //     group: "bp"
-        // },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/8.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/9.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
         {
             title: "Some Text",
             thumbnail: "/assets/event_and_church/9.jpeg",
@@ -230,20 +236,41 @@ const Works = ({page}) => {
             category: "graphics",
             group: "ch"
         },
-        // {
-        //     title: "Some Text",
-        //     thumbnail: "/assets/sms/9.jpeg",
-        //     link: "/",
-        //     category: "graphics",
-        //     group: "sms"
-        // },
-        // {
-        //     title: "Some Text",
-        //     thumbnail: "/assets/brand_promotion/6.jpeg",
-        //     link: "/",
-        //     category: "graphics",
-        //     group: "bp"
-        // },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/9.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/10.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/11.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/12.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/13.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
         {
             title: "Some Text",
             thumbnail: "/assets/event_and_church/10.jpeg",
@@ -265,15 +292,20 @@ const Works = ({page}) => {
             category: "graphics",
             group: "ch"
         },
-        // {
-        //     title: "Some Text",
-        //     thumbnail: "/assets/sms/10.jpeg",
-        //     link: "/",
-        //     category: "graphics",
-        //     group: "sms"
-        // },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/10.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
         
     ]
+
+    const [activeGroup, setActiveGroup] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [isOpen, setIsOpen] = useState(false);
+    const [isLandingOpen, setIsLandingOpen] = useState(false);
 
     const [works, setWorks] = useState(listOfWorks)
 
@@ -283,6 +315,26 @@ const Works = ({page}) => {
     //     const newList = works.map((work)=> work.category === category)
     //     setWorks(newList)
     // }, [category])
+
+    const brandWorks = works.filter(w => w.group === "bp");
+    const eventWorks = works.filter(w => w.group === "ch");
+    const socialMediaWorks = works.filter(w => w.group === "sms");
+    const groupedWorks = {
+        bp: brandWorks,
+        ch: eventWorks,
+        sms: socialMediaWorks,
+    };
+
+    const handleOpen = (group, index) => {
+        setActiveGroup(group);
+        setActiveIndex(index);
+        setIsOpen(true);
+    };
+    const landingHandleOpen = (index) => {
+        // setActiveGroup(group);
+        setActiveIndex(index);
+        setIsLandingOpen(true);
+    };
 
   return (
     <section className={`min-hscreen ${page ? "py-25" : "py-20" } flex itemscenter justify-center md:px-10 px-5 bgwhite stiky top-0 left-0 w-full -z-10 bg[green]`}>
@@ -318,10 +370,12 @@ const Works = ({page}) => {
                 <div>
                     <h2 className='text-primary text-2xl font-bold my-6 text-center'>Brand Promotions</h2>
                     <div className='my10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-8 bg[red] w-full'>
-                        {works.map((work, index)=>(
-                            work.group === "bp" &&
-                            
-                            <WorkCard key={index} text={work.title} image={work.thumbnail} link={work.link} index={index} />
+                        {brandWorks.map((work, index)=>(
+                           <div key={index}
+                            onClick={() => handleOpen(work.group, index)}
+                            className="cursor-pointer">
+                                <WorkCard key={index} text={work.title} image={work.thumbnail} link={work.link} index={index} />
+                            </div>
                         ))}
 
                     </div>
@@ -333,9 +387,12 @@ const Works = ({page}) => {
                 <div className='my-6'>
                     <h2 className='text-primary text-2xl font-bold my-6 text-center'>Events & Church</h2>
                     <div className='my10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-8 bg[red] w-full'>
-                        {works.map((work, index)=>(
-                            work.group === "ch" &&
-                            <WorkCard key={index} text={work.title} image={work.thumbnail} link={work.link} index={index} />
+                        {eventWorks.map((work, index)=>(
+                            <div key={index}
+                            onClick={() => handleOpen(work.group, index)}
+                            className="cursor-pointer">
+                                <WorkCard key={index} text={work.title} image={work.thumbnail} link={work.link} index={index} />
+                            </div>
                         ))}
 
                     </div>
@@ -347,9 +404,12 @@ const Works = ({page}) => {
                 <div>
                     <h2 className='text-primary text-2xl font-bold my-6 text-center'>Social Media</h2>
                     <div className='my10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-8 bg[red] w-full'>
-                        {works.map((work, index)=>(
-                            work.group === "sms" &&
-                            <WorkCard key={index} text={work.title} image={work.thumbnail} link={work.link} index={index} />
+                        {socialMediaWorks.map((work, index)=>(
+                            <div key={index}
+                            onClick={() => handleOpen(work.group, index)}
+                            className="cursor-pointer">
+                                <WorkCard key={index} text={work.title} image={work.thumbnail} link={work.link} index={index} />
+                            </div>
                         ))}
 
                     </div>
@@ -363,8 +423,12 @@ const Works = ({page}) => {
 
             {!page && <div className='my-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-8 bg[red] w-full'>
                 {works.map((work, index)=>(
-                    !page && index < 20 &&
-                    <WorkCard key={index} text={work.title} image={work.thumbnail} link={work.link} index={index} />
+                    !page && index < 10 &&
+                    <div key={index}
+                            onClick={() => landingHandleOpen(index)}
+                            className="cursor-pointer">
+                        <WorkCard key={index} text={work.title} image={work.thumbnail} link={work.link} index={index} />
+                    </div>
                     // <img />
                     // :
                     // <WorkCard key={index} text={work.title} image={work.thumbnail} link={work.link} index={index} />
@@ -380,6 +444,88 @@ const Works = ({page}) => {
             </div>
 
         </div>
+                
+                {/* LANDING PAGE  */}
+        {isLandingOpen && (
+            <div
+                className="fixed inset-0 bg-white/90 z-50 flex items-center justify-center min-hscreen"
+                onClick={() => setIsLandingOpen(false)}
+            >
+                {/* Close Button */}
+                <button
+                onClick={() => setIsLandingOpen(false)}
+                className="absolute top-6 right-6 text-black text-3xl z-50"
+                >
+                ✕
+                </button>
+
+                {/* Prevent closing when clicking image */}
+                <div
+                className="w-full max-w-5xl px-4 bg[red] flex items-center justify-center pt24"
+                onClick={(e) => e.stopPropagation()}
+                >
+                    <Swiper
+                        modules={[Navigation, Pagination]}
+                        navigation
+                        // pagination={{ clickable: true }}
+                        initialSlide={activeIndex}
+                        spaceBetween={20}
+                        slidesPerView={1}
+                    >
+                        {works?.map((item, i) => (
+                        <SwiperSlide key={i}>
+                            <img
+                            src={item.thumbnail}
+                            alt=""
+                            className="w-full hauto h-[80vh] max-h-[80vh] object-contain rounded-xl"
+                            />
+                        </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </div>
+        )}
+
+        {/* WORK PAGE  */}
+        {isOpen && (
+            <div
+                className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+                onClick={() => setIsOpen(false)}
+            >
+                {/* Close Button */}
+                <button
+                onClick={() => setIsOpen(false)}
+                className="absolute top-6 right-6 text-white text-3xl z-50"
+                >
+                ✕
+                </button>
+
+                {/* Prevent closing when clicking image */}
+                <div
+                className="w-full max-w-5xl px-4"
+                onClick={(e) => e.stopPropagation()}
+                >
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    navigation
+                    pagination={{ clickable: true }}
+                    initialSlide={activeIndex}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                >
+                    {groupedWorks[activeGroup]?.map((item, i) => (
+                    <SwiperSlide key={i}>
+                        <img
+                        src={item.thumbnail}
+                        alt=""
+                        className="w-full h-auto max-h-[80vh] object-contain rounded-xl"
+                        />
+                    </SwiperSlide>
+                    ))}
+                </Swiper>
+                </div>
+            </div>
+        )}
 
 
     </section>
