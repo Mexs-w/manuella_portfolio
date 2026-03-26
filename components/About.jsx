@@ -1,9 +1,15 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Marquee from 'react-fast-marquee'
 import { motion } from 'framer-motion'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -16,6 +22,26 @@ const slideRight = {
 }
 
 const About = ({page}) => {
+
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  
+
+  const certificationsImages = [
+    "/assets/certifications/1.jpeg",
+    "/assets/certifications/2.jpeg",
+    "/assets/certifications/3.jpeg",
+    "/assets/certifications/4.jpeg"
+  ]
+
+  const handleOpen = (index) => {
+        // setActiveGroup(group);
+        setActiveIndex(index);
+        setIsOpen(true);
+  };
+  
+
   return (
     <section
       id="about"
@@ -90,6 +116,8 @@ const About = ({page}) => {
           </motion.div>
         </div>
 
+         
+
         {/* BRANDS */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -115,14 +143,18 @@ const About = ({page}) => {
                 "/assets/brands_logos/novak.webp",
                 "/assets/brands_logos/remys.png",
                 "/assets/brands_logos/GDP.jpeg",
+                "/assets/brands_logos/LOF.jpeg",
                 "/assets/brands_logos/logoipsum.png",
                 "/assets/brands_logos/novak.webp",
                 "/assets/brands_logos/remys.png",
                 "/assets/brands_logos/GDP.jpeg",
+                "/assets/brands_logos/LOF.jpeg",
                 "/assets/brands_logos/logoipsum.png",
                 "/assets/brands_logos/novak.webp",
                 "/assets/brands_logos/remys.png",
-                "/assets/brands_logos/GDP.jpeg"
+                "/assets/brands_logos/GDP.jpeg",
+                "/assets/brands_logos/LOF.jpeg",
+                
               ].map((image, i) => (
                 <img
                   key={i}
@@ -134,6 +166,102 @@ const About = ({page}) => {
             </Marquee>
           </div>
         </motion.div>
+
+       
+        {page && 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        //   viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flx flexcol mdflexrow itemscenter grid lg:grid-cols-[3fr_1.5fr] gap-6 rounded-3xl bgwhite shadowsm px6 md:px10 my-12 py-5"
+        >
+          <div className="w-full overflow-hidden order-2">
+              
+              <h3 className='font-bold text-2xl md:text-3xl'>Software Skills</h3>
+
+              <div className='my-8 flex items-center gap-5 w-full flex-wrap'>
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/canva.jpeg' alt='software' className='h-full w-full object-cover' />
+                </div>
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/lightroom.png' alt='software' className='h-full w-full object-cover' />
+                </div>
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/metricool.jpeg' alt='software' className='h-full w-full object-cover' />
+                </div>
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/business_suite.jpeg' alt='software' className='h-full w-full object-cover' />
+                </div>
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/snapseed.png' alt='software' className='h-full w-full object-cover' />
+                </div>
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/zarchiver.png' alt='software' className='h-full w-full object-cover' />
+                </div>
+                {/* <div className='h-20 w-20 overflow-hidden rounded-xl'>
+                    <img src='/assets/icons/skills/substack.png' alt='software' className='h-full w-full object-cover' />
+                </div> */}
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/pixellab.webp' alt='software' className='h-full w-full object-cover' />
+                </div>
+              </div>
+
+          </div>
+
+          <div>
+              <h3 className='font-bold md:text-3xl text-2xl'>Personal Skills</h3>
+
+              <div className='my-8 flex items-center gap-5 w-full flex-wrap'>
+                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                    <label className='md:text-lg text-sm'>Problem Solving</label>
+                  </div>
+                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                    <label className='md:text-lg text-sm'>Time Management</label>
+                  </div>
+                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                    <label className='md:text-lg text-sm'>Collaboration</label>
+                  </div>
+                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                    <label className='md:text-lg text-sm'>Strategic Thinking</label>
+                  </div>
+                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                    <label className='md:text-lg text-sm'>Adaptability</label>
+                  </div>
+                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                    <label className='md:text-lg text-sm'>Communication</label>
+                  </div>
+                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                    <label className='md:text-lg text-sm'>Attention to Detail</label>
+                  </div>
+              </div>
+          </div>
+        </motion.div>}
+
+         {page && 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        //   viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flx flexcol mdflexrow itemscenter gap-6 rounded-3xl bgwhite shadowsm px6 md:px10 my-8 py-5"
+        >
+          <div className="w-full overflow-hidden order-2">
+              
+              <h3 className='fontbold text-2xl md:text-3xl text-center'>My <span className=''>Certifications</span></h3>
+
+              <div className='my-12 grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-5 w-full flex-wrap'>
+                {certificationsImages.map((image, idx)=>(
+                  <div className='h-auto overflow-hidden rounded-xl mx5 cursor-pointer' key={idx} onClick={() => handleOpen(idx)}>
+                      <img src={image} alt={`cert ${idx}`} className='h-full w-full object-cover' />
+                  </div>
+                ))}
+              </div>
+
+          </div>
+
+          
+        </motion.div>}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -183,6 +311,47 @@ const About = ({page}) => {
         </motion.div>
 
       </div>
+
+
+        {isOpen && (
+            <div
+                className="fixed inset-0 bg-white/90 z-50 flex items-center justify-center min-hscreen"
+                onClick={() => setIsOpen(false)}
+            >
+                {/* Close Button */}
+                <button
+                onClick={() => setIsOpen(false)}
+                className="absolute top-6 right-6 text-black text-3xl z-50"
+                >
+                ✕
+                </button>
+
+                {/* Prevent closing when clicking image */}
+                <div
+                className="w-full max-w-5xl px-4 bg[red] flex items-center justify-center pt24"
+                onClick={(e) => e.stopPropagation()}
+                >
+                    <Swiper
+                        modules={[Navigation, Pagination]}
+                        navigation
+                        pagination={{ clickable: true }}
+                        initialSlide={activeIndex}
+                        spaceBetween={20}
+                        slidesPerView={1}
+                    >
+                        {certificationsImages?.map((item, i) => (
+                        <SwiperSlide key={i}>
+                            <img
+                            src={item}
+                            alt=""
+                            className="w-full hauto h-[80vh] max-h-[80vh] object-contain rounded-xl"
+                            />
+                        </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </div>
+        )}
     </section>
   )
 }

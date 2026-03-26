@@ -465,7 +465,7 @@ const Works = ({page}) => {
                 onClick={(e) => e.stopPropagation()}
                 >
                     <Swiper
-                        modules={[Navigation, Pagination]}
+                        modules={[Navigation]}
                         navigation
                         // pagination={{ clickable: true }}
                         initialSlide={activeIndex}
