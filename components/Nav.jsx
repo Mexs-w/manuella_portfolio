@@ -32,7 +32,7 @@ const Nav = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-8 px-8 py-2 rounded-full bg-[#DBDBDB]/30">
+        <ul className="hidden md:flex items-center gap-12 px-8 py-3 rounded-full bg-[#DBDBDB]/30">
           {navLinks.map((link, index) => (
             <motion.li
               key={index}
@@ -58,7 +58,7 @@ const Nav = () => {
               whileTap={{ scale: 0.95 }}
               className="px-5 py-2 bg-primary text-white rounded-full font-medium"
             >
-              Contact
+              Book a call
             </motion.button>
           </Link>
         </div>
@@ -101,7 +101,7 @@ const Nav = () => {
 
             <Link href="#contact">
               <button className="mt-6 w-full px-5 py-3 bg-primary text-white rounded-full font-medium">
-                Contact
+                Book a call
               </button>
             </Link>
           </motion.div>

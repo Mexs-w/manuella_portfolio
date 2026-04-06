@@ -440,7 +440,7 @@ const Works = ({page}) => {
 
             <div className='flex items-center gap-4 justify-center flex-wrap my-8'>
                 {!page && <Link href="/works" className="inlineblock my-6  px-6 py-3 bg-secondary text-white rounded-full font-medium hover:scale-105 transition">See my works</Link>}
-                <Link href="/" className="inlineblock px-6 py-3 my-6  bg-primary text-white rounded-full font-medium hover:scale-105 transition">Contact Me</Link>
+                <Link href="/" className="inlineblock px-6 py-3 my-6  bg-primary text-white rounded-full font-medium hover:scale-105 transition">Book a call</Link>
             </div>
 
         </div>

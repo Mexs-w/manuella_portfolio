@@ -72,7 +72,7 @@ const Hero = () => {
             >
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
-                  href="#contact"
+                  href="https://wa.me/2348051185971?text=Hi,%20I'm%20_______%20in%20can%20you%20help%20me%20with%20_______"
                   className="px-6 py-3 bg-primary text-white rounded-full font-medium"
                 >
                   Let’s Talk
@@ -81,7 +81,7 @@ const Hero = () => {
 
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
-                  href="#work"
+                  href="/work"
                   className="px-6 py-3 bg-secondary text-white rounded-full font-medium"
                 >
                   See My Works

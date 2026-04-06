@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const container = {
   hidden: {},
@@ -23,6 +24,13 @@ const card = {
 }
 
 const Services = () => {
+
+  const router = useRouter()
+
+  const linkTo = (href)=>{
+    router.push(href)
+  }
+
   return (
     <section className="relative py-24 px-5 md:px-10 flex items-center justify-center">
 
@@ -61,12 +69,13 @@ const Services = () => {
           {/* FEATURED SERVICE */}
           <motion.div
             variants={card}
-            className="bg-white/40 backdrop-blur-md text-white rounded-3xl px-8 py-6 max-w-xl w-full hover:-translate-y-2 transition min-h-50"
+            className="bg-white/40 backdrop-blur-md text-white rounded-3xl px-8 py-6 max-w-xl w-full hover:-translate-y-2 transition min-h-50 cursor-pointer"
+            onClick={()=>linkTo("/services/platform_management")}
           >
             <div className="flex items-center gap-4 border-b border-white/50 pb-4">
               <img src="/assets/icons/brain.svg" className="w-12 h-12" />
               <h5 className="text-2xl font-semibold">
-                Social Media Management
+                Platform Management
               </h5>
             </div>
             <p className="mt-5 text-lg leading-relaxed">
@@ -82,23 +91,28 @@ const Services = () => {
                 icon: '/assets/icons/graph.svg',
                 title: 'Content Strategy',
                 text: 'Campaign planning & performance-focused strategies',
+                link: '/services/content_strategy'
               },
               {
                 icon: '/assets/icons/paint.svg',
                 title: 'Graphics Design',
                 text: 'Scroll-stopping visuals, brand designs & promos',
+                link: '/works'
               },
               {
                 icon: '/assets/icons/handwritting.svg',
                 title: 'Content & Copywriting',
                 text: 'Captions, content ideas & brand storytelling',
+                link: '/services/content_writing'
               },
             ].map((service, i) => (
               <motion.div
                 key={i}
                 variants={card}
                 whileHover={{ y: -8, scale: 1.02 }} 
-                className={`bg-white/30 backdrop-blur-md text-white rounded-3xl px-7 py-6 transition min-h-50 ${i === 1 ? 'md:mb-10' : 'md:mt-10'}`}
+                className={`cursor-pointer bg-white/30 backdrop-blur-md text-white rounded-3xl px-7 py-6 transition min-h-50 ${i === 1 ? 'md:mb-10' : 'md:mt-10'}`}
+                onClick={()=>linkTo(service.link)}
+
               >
                 <div className={`flex items-center gap-4 border-b border-white/40 pb-4`}>
                   <img src={service.icon} className="w-10 h-10" />
@@ -113,7 +127,7 @@ const Services = () => {
             ))}
           </div>
 
-        <Link href="/" className="inline-block px-6 py-3 bg-secondary text-white rounded-full font-medium hover:scale-105 transition">Contact me</Link>
+        <Link href="/" className="inline-block px-6 py-3 bg-secondary text-white rounded-full font-medium hover:scale-105 transition">Book a call</Link>
 
         </motion.div>
       </div>
