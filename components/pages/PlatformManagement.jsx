@@ -61,25 +61,24 @@ const PlatformManagement = () => {
                     </h2>
                     <hr className="my-2 h-0.5 w-16 mx-auto rounded-full bg-secondary border-0" />
                 </motion.div>
+
+
+                 <CaseStudy 
+                    logo={"/assets/case/cuapass/cuapass1.jpg"}
+                    images={cuapassImages}
+                    nameOfOrg={"CUAPASS"}
+                    category={"ACADEMIC DEPARTMENT"}
+                    bodyTextP1={"As the Public Relations Officer (P.R.O) of CUAPASS (Caleb University Association of Pure and Applied Science Students), I managed the TikTok presence for CUAPASS, where I developed and implemented content strategies aligned with the academic and social standards of Caleb University, Imota, Lagos State. My role focused on using digital media to inform, inspire, and connect undergraduate students, postgraduates, and alumni."}
+                    bodyTextP2={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University.<"}
+                    approachText={"I combined trend-driven content with data insights to produce engaging videos that consistently delivered strong analytics. Also, blended creativity with performance tracking, using analytics to shape content that resonated with the student community."}
+                    platform={"Tiktok"}
+                    platformText={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University."}
+                    
+                />
+
+                <hr className='border border-secondary' />
+
             </div>
-
-            <CaseStudy 
-                logo={"/assets/case/cuapass/cuapass1.jpg"}
-                images={cuapassImages}
-                nameOfOrg={"CUAPASS"}
-                category={"ACADEMIC DEPARTMENT"}
-                bodyTextP1={"As the Public Relations Officer (P.R.O) of CUAPASS (Caleb University Association of Pure and Applied Science Students), I managed the TikTok presence for CUAPASS, where I developed and implemented content strategies aligned with the academic and social standards of Caleb University, Imota, Lagos State. My role focused on using digital media to inform, inspire, and connect undergraduate students, postgraduates, and alumni."}
-                bodyTextP2={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University.<"}
-                approachText={"I combined trend-driven content with data insights to produce engaging videos that consistently delivered strong analytics. Also, blended creativity with performance tracking, using analytics to shape content that resonated with the student community."}
-                platform={"Tiktok"}
-                platformText={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University."}
-                
-            />
-
-            <hr className='border border-secondary' />
-
-
-
             
         </div>
         
