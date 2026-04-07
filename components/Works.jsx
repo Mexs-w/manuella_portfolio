@@ -299,6 +299,41 @@ const Works = ({page}) => {
             category: "graphics",
             group: "sms"
         },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/11.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/12.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/13.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/14.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/15.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
         
     ]
 
