@@ -334,6 +334,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "sms"
         },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/16.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
         
     ]
 
