@@ -301,10 +301,24 @@ const Works = ({page}) => {
         },
         {
             title: "Some Text",
+            thumbnail: "/assets/event_and_church/13.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
+        },
+        {
+            title: "Some Text",
             thumbnail: "/assets/sms/11.jpeg",
             link: "/",
             category: "graphics",
             group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/event_and_church/14.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
         },
         {
             title: "Some Text",
@@ -315,10 +329,24 @@ const Works = ({page}) => {
         },
         {
             title: "Some Text",
+            thumbnail: "/assets/event_and_church/15.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
+        },
+        {
+            title: "Some Text",
             thumbnail: "/assets/sms/13.jpeg",
             link: "/",
             category: "graphics",
             group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/event_and_church/16.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
         },
         {
             title: "Some Text",
