@@ -3,12 +3,13 @@ import Nav from '@/components/Nav'
 // import About from '@/components/About'
 import Footer from '@/components/Footer'
 import Services from '@/components/Services'
+import PlatformManagement from '@/components/pages/PlatformManagement'
 
 const page = () => {
   return (
     <div className='overflow-x-hidden'>
         <Nav />
-        <h2 className='pt-20'>Platform Management</h2>
+        <PlatformManagement />
         <Services />
         <Footer />
     </div>
