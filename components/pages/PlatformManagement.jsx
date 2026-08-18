@@ -34,6 +34,13 @@ const PlatformManagement = () => {
         "/assets/case/cuapass/4.jpeg",
     ]
 
+    const bysistersImages = [
+        "/assets/case/bysisters/1.jpeg",
+        "/assets/case/bysisters/2a.jpeg",
+        "/assets/case/bysisters/2b.jpeg",
+        "/assets/case/bysisters/3a.jpeg"
+    ]
+
     const [activeIndex, setActiveIndex] = useState(0);
 
     const [isOpen, setIsOpen] = useState(false);
@@ -77,6 +84,19 @@ const PlatformManagement = () => {
                 />
 
                 <hr className='border border-secondary' />
+
+                <CaseStudy 
+                    logo={"/assets/case/bysisters/bys.jpeg"}
+                    images={bysistersImages}
+                    nameOfOrg={"BYSISTERS"}
+                    category={"RELIGIOUS DEPARTMENT"}
+                    bodyTextP1={"As the Public Relations Officer (P.R.O) of Beautiful City of Yaweh, I managed the Instagram presence for Beautiful City of Yaweh, where I developed and implemented content strategies aligned with the academic and social standards of Caleb University, Imota, Lagos State. My role focused on using digital media to inform, inspire, and connect undergraduate students, postgraduates, and alumni."}
+                    bodyTextP2={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University.<"}
+                    approachText={"I combined trend-driven content with data insights to produce engaging videos that consistently delivered strong analytics. Also, blended creativity with performance tracking, using analytics to shape content that resonated with the student community."}
+                    platform={"Instagram"}
+                    platformText={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University."}
+                    
+                />
 
             </div>
             

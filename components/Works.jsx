@@ -369,6 +369,132 @@ const Works = ({page}) => {
             category: "graphics",
             group: "sms"
         },
+          {
+            title: "Some Text",
+            thumbnail: "/assets/event_and_church/17.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
+        },
+          {
+            title: "Some Text",
+            thumbnail: "/assets/event_and_church/18.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/event_and_church/19.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/17.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/18.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/19.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/20.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/21.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/22.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/23.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/24.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/event_and_church/20.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/event_and_church/21.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/event_and_church/22.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/event_and_church/23.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "ch"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/14.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/15.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/16.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
         
     ]
 
@@ -510,7 +636,7 @@ const Works = ({page}) => {
 
             <div className='flex items-center gap-4 justify-center flex-wrap my-8'>
                 {!page && <Link href="/works" className="inlineblock my-6  px-6 py-3 bg-secondary text-white rounded-full font-medium hover:scale-105 transition">See my works</Link>}
-                <Link href="/" className="inlineblock px-6 py-3 my-6  bg-primary text-white rounded-full font-medium hover:scale-105 transition">Book a call</Link>
+                <Link href="tel:+2348051185971" className="inlineblock px-6 py-3 my-6  bg-primary text-white rounded-full font-medium hover:scale-105 transition">Book a call</Link>
             </div>
 
         </div>

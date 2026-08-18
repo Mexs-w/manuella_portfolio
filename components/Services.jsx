@@ -127,7 +127,7 @@ const Services = () => {
             ))}
           </div>
 
-        <Link href="/" className="inline-block px-6 py-3 bg-secondary text-white rounded-full font-medium hover:scale-105 transition">Book a call</Link>
+        <Link href="tel:+2348051185971" className="inline-block px-6 py-3 bg-secondary text-white rounded-full font-medium hover:scale-105 transition">Book a call</Link>
 
         </motion.div>
       </div>

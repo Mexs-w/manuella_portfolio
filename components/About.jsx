@@ -109,6 +109,7 @@ const About = ({page}) => {
             className="flex justify-center order-1 md:order-1 overflow-hidden"
           >
             <img
+              // src="/assets/about.jpeg"
               src="/assets/about.png"
               alt="Manuella about"
               className="w-[85%] md:w-[95%] object-contain hover:scale-105 transition-all"
@@ -139,21 +140,18 @@ const About = ({page}) => {
               gradient={false}
             >
               {[
-                "/assets/brands_logos/logoipsum.png",
                 "/assets/brands_logos/novak.webp",
                 "/assets/brands_logos/remys.png",
                 "/assets/brands_logos/GDP.jpeg",
                 "/assets/brands_logos/LOF.jpeg",
-                "/assets/brands_logos/logoipsum.png",
+                "/assets/brands_logos/caleb_bio.jpeg",
+                "/assets/brands_logos/glorious_ministers.jpeg",
                 "/assets/brands_logos/novak.webp",
                 "/assets/brands_logos/remys.png",
                 "/assets/brands_logos/GDP.jpeg",
                 "/assets/brands_logos/LOF.jpeg",
-                "/assets/brands_logos/logoipsum.png",
-                "/assets/brands_logos/novak.webp",
-                "/assets/brands_logos/remys.png",
-                "/assets/brands_logos/GDP.jpeg",
-                "/assets/brands_logos/LOF.jpeg",
+                "/assets/brands_logos/caleb_bio.jpeg",
+                "/assets/brands_logos/glorious_ministers.jpeg",             
                 
               ].map((image, i) => (
                 <img
@@ -188,10 +186,16 @@ const About = ({page}) => {
                     <img src='/assets/icons/skills/lightroom.png' alt='software' className='h-full w-full object-cover' />
                 </div>
                 <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
-                    <img src='/assets/icons/skills/metricool.jpeg' alt='software' className='h-full w-full object-cover' />
+                    <img src='/assets/icons/skills/linkedin.png' alt='software' className='h-full w-full object-cover' />
                 </div>
                 <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
-                    <img src='/assets/icons/skills/business_suite.jpeg' alt='software' className='h-full w-full object-cover' />
+                    <img src='/assets/icons/skills/capcut.jpeg' alt='software' className='h-full w-full object-cover' />
+                </div>
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/photoshop.png' alt='software' className='h-full w-full object-cover' />
+                </div>
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/business_suite.jpg' alt='software' className='h-full w-full object-cover' />
                 </div>
                 <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
                     <img src='/assets/icons/skills/snapseed.png' alt='software' className='h-full w-full object-cover' />
@@ -199,11 +203,15 @@ const About = ({page}) => {
                 <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
                     <img src='/assets/icons/skills/zarchiver.png' alt='software' className='h-full w-full object-cover' />
                 </div>
-                {/* <div className='h-20 w-20 overflow-hidden rounded-xl'>
+                <div className='h-20 w-20 overflow-hidden rounded-xl'>
                     <img src='/assets/icons/skills/substack.png' alt='software' className='h-full w-full object-cover' />
-                </div> */}
+                </div>
                 <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
                     <img src='/assets/icons/skills/pixellab.webp' alt='software' className='h-full w-full object-cover' />
+                </div>
+               
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/metricool.jpeg' alt='software' className='h-full w-full object-cover' />
                 </div>
               </div>
 
@@ -213,25 +221,25 @@ const About = ({page}) => {
               <h3 className='font-bold md:text-3xl text-2xl'>Personal Skills</h3>
 
               <div className='my-8 flex items-center gap-5 w-full flex-wrap'>
-                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                  <div className='py-2 px-6 rounded-full bg-[#5B2D8B] text-white'>
                     <label className='md:text-lg text-sm'>Problem Solving</label>
                   </div>
-                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                  <div className='py-2 px-6 rounded-full bg-[#5B2D8B] text-white'>
                     <label className='md:text-lg text-sm'>Time Management</label>
                   </div>
-                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                  <div className='py-2 px-6 rounded-full bg-[#5B2D8B] text-white'>
                     <label className='md:text-lg text-sm'>Collaboration</label>
                   </div>
-                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                  <div className='py-2 px-6 rounded-full bg-[#5B2D8B] text-white'>
                     <label className='md:text-lg text-sm'>Strategic Thinking</label>
                   </div>
-                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                  <div className='py-2 px-6 rounded-full bg-[#5B2D8B] text-white'>
                     <label className='md:text-lg text-sm'>Adaptability</label>
                   </div>
-                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                  <div className='py-2 px-6 rounded-full bg-[#5B2D8B] text-white'>
                     <label className='md:text-lg text-sm'>Communication</label>
                   </div>
-                  <div className='py-2 px-6 rounded-full bg-primary text-white'>
+                  <div className='py-2 px-6 rounded-full bg-[#5B2D8B] text-white'>
                     <label className='md:text-lg text-sm'>Attention to Detail</label>
                   </div>
               </div>
@@ -281,23 +289,29 @@ const About = ({page}) => {
                 "/assets/6.jpg",
                 "/assets/7.jpeg",
                 "/assets/8.jpeg",
-                "/assets/9.jpg",
+                "/assets/9.jpeg",
                 "/assets/10.jpeg",
                 "/assets/11.jpeg",
                 "/assets/12.jpeg",
                 "/assets/13.jpeg",
                 "/assets/14.jpeg",
                 "/assets/15.jpeg",
+                "/assets/16.jpeg",
+                "/assets/17.jpeg",
+                "/assets/18.jpeg",
                 "/assets/6.jpg",
                 "/assets/7.jpeg",
                 "/assets/8.jpeg",
-                "/assets/9.jpg",
+                "/assets/9.jpeg",
                 "/assets/10.jpeg",
                 "/assets/11.jpeg",
                 "/assets/12.jpeg",
                 "/assets/13.jpeg",
                 "/assets/14.jpeg",
-                "/assets/15.jpeg"
+                "/assets/15.jpeg",
+                "/assets/16.jpeg",
+                "/assets/17.jpeg",
+                "/assets/18.jpeg",                
               ].map((image, i) => (
                 <img
                   key={i}
