@@ -213,6 +213,9 @@ const About = ({page}) => {
                 <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
                     <img src='/assets/icons/skills/metricool.jpeg' alt='software' className='h-full w-full object-cover' />
                 </div>
+                <div className='md:h-20 md:w-20 h-10 w-10 overflow-hidden rounded-xl mx5'>
+                    <img src='/assets/icons/skills/365.webp' alt='software' className='h-full w-full object-cover' />
+                </div>
               </div>
 
           </div>

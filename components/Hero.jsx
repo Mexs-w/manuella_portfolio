@@ -98,7 +98,7 @@ const Hero = () => {
             className="flex justify-center md:justify-end"
           >
             <img
-              src="/assets/hero-img.png"
+              src="/assets/hero-img_orig.png"
               alt="Manuella hero"
               className="w-[80%] md:w-[90%] object-contain animatepulse"
             />

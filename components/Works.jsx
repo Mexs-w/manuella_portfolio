@@ -243,13 +243,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "sms"
         },
-        {
-            title: "Some Text",
-            thumbnail: "/assets/brand_promotion/10.jpeg",
-            link: "/",
-            category: "graphics",
-            group: "bp"
-        },
+        // {
+        //     title: "Some Text",
+        //     thumbnail: "/assets/brand_promotion/10.jpeg",
+        //     link: "/",
+        //     category: "graphics",
+        //     group: "bp"
+        // },
         {
             title: "Some Text",
             thumbnail: "/assets/brand_promotion/11.jpeg",

@@ -7,7 +7,7 @@ import { Linkedin, Facebook, Instagram, MessageCircle } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <section className="py-12 md:px-10 px-5 bg-dark-primary text-white w-full">
+    <section className="py-12 md:px-10 px-5 bg-[#2A0E44] text-white w-full">
       <footer className="max-w-7xl w-full mx-auto">
 
         {/* TOP CTA */}
