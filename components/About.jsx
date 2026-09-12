@@ -152,6 +152,8 @@ const About = ({page}) => {
                 "/assets/brands_logos/LOF.jpeg",
                 "/assets/brands_logos/caleb_bio.jpeg",
                 "/assets/brands_logos/glorious_ministers.jpeg",             
+                "/assets/brands_logos/dot.jpeg",             
+                "/assets/brands_logos/hair_by_ore.jpeg",             
                 
               ].map((image, i) => (
                 <img

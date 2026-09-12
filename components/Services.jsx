@@ -3,34 +3,44 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 
 const container = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.12,
+      delayChildren: 0.1,
     },
   },
 }
 
-const card = {
-  hidden: { opacity: 0, y: 40 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' },
-  },
+const item = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
 }
 
+const otherServices = [
+  {
+    icon: '/assets/icons/graph.svg',
+    title: 'Content Strategy',
+    text: 'Campaign planning & performance-focused strategies',
+    link: '/services/content_strategy',
+  },
+  {
+    icon: '/assets/icons/paint.svg',
+    title: 'Graphics Design',
+    text: 'Scroll-stopping visuals, brand designs & promos',
+    link: '/works',
+  },
+  {
+    icon: '/assets/icons/handwritting.svg',
+    title: 'Content & Copywriting',
+    text: 'Captions, content ideas & brand storytelling',
+    link: '/services/content_writing',
+  },
+]
+
 const Services = () => {
-
-  const router = useRouter()
-
-  const linkTo = (href)=>{
-    router.push(href)
-  }
-
   return (
     <section className="relative py-24 px-5 md:px-10 flex items-center justify-center">
 
@@ -38,10 +48,10 @@ const Services = () => {
       <div className="absolute inset-0 -z-10">
         <img
           src="/assets/services.png"
-          alt="services background"
+          alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-primary/70" />
+        <div className="absolute inset-0 bg-primary/85" />
       </div>
 
       <div className="max-w-7xl w-full z-10">
@@ -50,7 +60,7 @@ const Services = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-        //   viewport={{ once: true }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -63,72 +73,59 @@ const Services = () => {
           variants={container}
           initial="hidden"
           whileInView="show"
-        //   viewport={{ once: true }}
-          className="flex flex-col items-center gap-12"
+          viewport={{ once: true }}
         >
-          {/* FEATURED SERVICE */}
-          <motion.div
-            variants={card}
-            className="bg-white/40 backdrop-blur-md text-white rounded-3xl px-8 py-6 max-w-xl w-full hover:-translate-y-2 transition min-h-50 cursor-pointer"
-            onClick={()=>linkTo("/services/platform_management")}
-          >
-            <div className="flex items-center gap-4 border-b border-white/50 pb-4">
-              <img src="/assets/icons/brain.svg" className="w-12 h-12" />
-              <h5 className="text-2xl font-semibold">
-                Platform Management
-              </h5>
-            </div>
-            <p className="mt-5 text-lg leading-relaxed">
-              Instagram, TikTok, Facebook, LinkedIn & YouTube planning,
-              posting, engagement & analytics.
-            </p>
+          {/* FEATURED SERVICE — the only one that gets the glass treatment */}
+          <motion.div variants={item}>
+            <Link
+              href="/services/platform_management"
+              className="group block bg-white/15 backdrop-blur-md text-white rounded-3xl px-8 py-8 md:px-10 md:py-10 border border-white/20 hover:bg-white/20 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+            >
+              <div className="flex flex-col md:flex-row md:items-center gap-6">
+                <img src="/assets/icons/brain.svg" className="w-14 h-14 shrink-0" alt="" />
+                <div>
+                  <h5 className="text-2xl font-semibold">Platform Management</h5>
+                  <p className="mt-2 text-lg leading-relaxed text-white/85 max-w-2xl">
+                    Instagram, TikTok, Facebook, LinkedIn & YouTube planning,
+                    posting, engagement & analytics.
+                  </p>
+                </div>
+              </div>
+            </Link>
           </motion.div>
 
-          {/* OTHER SERVICES */}
-          <div className="grid md:grid-cols-3 gap-8 w-full">
-            {[
-              {
-                icon: '/assets/icons/graph.svg',
-                title: 'Content Strategy',
-                text: 'Campaign planning & performance-focused strategies',
-                link: '/services/content_strategy'
-              },
-              {
-                icon: '/assets/icons/paint.svg',
-                title: 'Graphics Design',
-                text: 'Scroll-stopping visuals, brand designs & promos',
-                link: '/works'
-              },
-              {
-                icon: '/assets/icons/handwritting.svg',
-                title: 'Content & Copywriting',
-                text: 'Captions, content ideas & brand storytelling',
-                link: '/services/content_writing'
-              },
-            ].map((service, i) => (
-              <motion.div
+          {/* OTHER SERVICES — a quiet divided list, not three more cards */}
+          <motion.div
+            variants={item}
+            className="mt-4 grid md:grid-cols-3 divide-y divide-white/15 md:divide-y-0 md:divide-x border-t border-white/15 md:border-t-0"
+          >
+            {otherServices.map((service, i) => (
+              <Link
                 key={i}
-                variants={card}
-                whileHover={{ y: -8, scale: 1.02 }} 
-                className={`cursor-pointer bg-white/30 backdrop-blur-md text-white rounded-3xl px-7 py-6 transition min-h-50 ${i === 1 ? 'md:mb-10' : 'md:mt-10'}`}
-                onClick={()=>linkTo(service.link)}
-
+                href={service.link}
+                className="group py-8 md:px-8 first:md:pl-0 last:md:pr-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white rounded-lg"
               >
-                <div className={`flex items-center gap-4 border-b border-white/40 pb-4`}>
-                  <img src={service.icon} className="w-10 h-10" />
-                  <h5 className="text-xl lg:text-2xl font-semibold">
+                <div className="flex items-center gap-3">
+                  <img src={service.icon} className="w-8 h-8" alt="" />
+                  <h5 className="text-lg font-semibold text-white">
                     {service.title}
                   </h5>
                 </div>
-                <p className="mt-4 leading-relaxed">
+                <p className="mt-3 leading-relaxed text-white/75 group-hover:text-white/95 transition-colors">
                   {service.text}
                 </p>
-              </motion.div>
+              </Link>
             ))}
-          </div>
+          </motion.div>
 
-        <Link href="tel:+2348051185971" className="inline-block px-6 py-3 bg-secondary text-white rounded-full font-medium hover:scale-105 transition">Book a call</Link>
-
+          <motion.div variants={item} className="mt-16 text-center flex justify-center md:text-left">
+            <Link
+              href="tel:+2348051185971"
+              className="inline-block px-6 py-3 bg-secondary text-white rounded-full font-medium hover:scale-105 transition"
+            >
+              Book a call
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -495,6 +495,41 @@ const Works = ({page}) => {
             category: "graphics",
             group: "bp"
         },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/17.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/18.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/brand_promotion/19.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "bp"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/25.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
+        {
+            title: "Some Text",
+            thumbnail: "/assets/sms/26.jpeg",
+            link: "/",
+            category: "graphics",
+            group: "sms"
+        },
         
     ]
 
