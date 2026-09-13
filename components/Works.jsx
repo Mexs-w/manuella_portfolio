@@ -511,7 +511,7 @@ const Works = ({page}) => {
         },
         {
             title: "Some Text",
-            thumbnail: "/assets/brand_promotion/19.jpeg",
+            thumbnail: "/assets/brand_promotion/20.png",
             link: "/",
             category: "graphics",
             group: "bp"

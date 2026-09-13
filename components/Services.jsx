@@ -120,7 +120,9 @@ const Services = () => {
 
           <motion.div variants={item} className="mt-16 text-center flex justify-center md:text-left">
             <Link
-              href="tel:+2348051185971"
+              href="https://calendly.com/osazuwamanuela/30min"
+              // href="tel:+2348051185971"
+              target='_blank'
               className="inline-block px-6 py-3 bg-secondary text-white rounded-full font-medium hover:scale-105 transition"
             >
               Book a call

@@ -52,7 +52,8 @@ const Nav = () => {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Link href="tel:+2348051185971">
+          <Link href="https://calendly.com/osazuwamanuela/30min" target='_blank'>
+          {/* <Link href="tel:+2348051185971"> */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -99,7 +100,8 @@ const Nav = () => {
               ))}
             </ul>
 
-            <Link href="tel:+2348051185971">
+            <Link href="https://calendly.com/osazuwamanuela/30min" target='_blank'>
+            {/* <Link href="tel:+2348051185971"> */}
               <button className="mt-6 w-full px-5 py-3 bg-[#5B2D8B] text-white rounded-full font-medium">
                 Book a call
               </button>

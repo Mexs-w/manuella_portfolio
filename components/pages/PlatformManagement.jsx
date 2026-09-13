@@ -90,7 +90,7 @@ const PlatformManagement = () => {
                     images={bysistersImages}
                     nameOfOrg={"BCYSISTERS"}
                     category={"RELIGIOUS ORGANIZATION"}
-                    bodyTextP1={"As the Head of Publicity of Beautiful City of Yaweh, I managed the Instagram presence for Beautiful City of Yaweh, where I developed and implemented content strategies aligned with the spiritual standard of the ministry of Caleb University, Imota, Lagos State. My role focused on using digital media to inform, inspire, and connect undergraduate students, postgraduates, and alumni."}
+                    bodyTextP1={"As the Head of Publicity of Beautiful City of Yaweh, I managed the Instagram presence for Beautiful City of Yaweh, where I developed and implemented content strategies aligned with the spiritual standard of the ministry. Connect people to the ministry and foster a strong sense of community."}
                     bodyTextP2={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community."}
                     approachText={"I combined trend-driven content with data insights to produce engaging videos that consistently delivered strong analytics."}
                     platform={"Instagram"}
