@@ -201,13 +201,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "sms"
         },
-        {
-            title: "Some Text",
-            thumbnail: "/assets/brand_promotion/8.jpeg",
-            link: "/",
-            category: "graphics",
-            group: "bp"
-        },
+        // {
+        //     title: "Some Text",
+        //     thumbnail: "/assets/brand_promotion/8.jpeg",
+        //     link: "/",
+        //     category: "graphics",
+        //     group: "bp"
+        // },
         {
             title: "Some Text",
             thumbnail: "/assets/event_and_church/8.jpeg",
@@ -257,13 +257,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "bp"
         },
-        {
-            title: "Some Text",
-            thumbnail: "/assets/brand_promotion/12.jpeg",
-            link: "/",
-            category: "graphics",
-            group: "bp"
-        },
+        // {
+        //     title: "Some Text",
+        //     thumbnail: "/assets/brand_promotion/12.jpeg",
+        //     link: "/",
+        //     category: "graphics",
+        //     group: "bp"
+        // },
         {
             title: "Some Text",
             thumbnail: "/assets/brand_promotion/13.jpeg",
