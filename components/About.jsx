@@ -142,7 +142,7 @@ const About = ({page}) => {
               {[
                 "/assets/brands_logos/novak.webp",
                 "/assets/brands_logos/remys.png",
-                "/assets/brands_logos/GDP.jpeg",
+                "/assets/brands_logos/GDP1.png",
                 "/assets/brands_logos/LOF.jpeg",
                 "/assets/brands_logos/caleb_bio.jpeg",
                 "/assets/brands_logos/glorious_ministers.jpeg",
@@ -150,7 +150,7 @@ const About = ({page}) => {
                 "/assets/brands_logos/hair_by_ore.jpeg",  
                 "/assets/brands_logos/novak.webp",
                 "/assets/brands_logos/remys.png",
-                "/assets/brands_logos/GDP.jpeg",
+                "/assets/brands_logos/GDP1.png",
                 "/assets/brands_logos/LOF.jpeg",
                 "/assets/brands_logos/caleb_bio.jpeg",
                 "/assets/brands_logos/glorious_ministers.jpeg",             

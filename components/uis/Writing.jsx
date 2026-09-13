@@ -56,7 +56,7 @@ const Writing = ({logo, category, nameOfOrg, bodyTextP1, bodyTextP2, approachTex
                 </div>
                 <div className='py-6 px-10 bg-primary text-white rounded-2xl relative overflow-hidden'>
                     <h2 className='font-bold text-2xl my-3 text-center md:text-start'>Analytics Results</h2>
-                    <p>Below are selected key analytics reflecting the reach, engagement, and overall performance of the {nameOfOrg} {platform} page during my tenure as P.R.O</p>
+                    <p>Below are selected key analytics reflecting the reach, engagement, and overall performance of the {nameOfOrg} {platform} page</p>
                 <h3 className='absolute left-[40%] top-[40%] text-7xl text-white opacity-10 -rotate-12'>{nameOfOrg}</h3>
 
                 </div>

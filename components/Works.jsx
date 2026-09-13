@@ -82,13 +82,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "bp"
         },
-        {
-            title: "Some Text",
-            thumbnail: "/assets/event_and_church/2.jpeg",
-            link: "/",
-            category: "graphics",
-            group: "ch"
-        },
+        // {
+        //     title: "Some Text",
+        //     thumbnail: "/assets/event_and_church/2.jpeg",
+        //     link: "/",
+        //     category: "graphics",
+        //     group: "ch"
+        // },
         {
             title: "Some Text",
             thumbnail: "/assets/sms/2.jpeg",
@@ -110,13 +110,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "ch"
         },
-        {
-            title: "Some Text",
-            thumbnail: "/assets/sms/3.jpeg",
-            link: "/",
-            category: "graphics",
-            group: "sms"
-        },
+        // {
+        //     title: "Some Text",
+        //     thumbnail: "/assets/sms/3.jpeg",
+        //     link: "/",
+        //     category: "graphics",
+        //     group: "sms"
+        // },
         {
             title: "Some Text",
             thumbnail: "/assets/brand_promotion/4.jpeg",
@@ -131,13 +131,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "ch"
         },
-        {
-            title: "Some Text",
-            thumbnail: "/assets/sms/4.jpeg",
-            link: "/",
-            category: "graphics",
-            group: "sms"
-        },
+        // {
+        //     title: "Some Text",
+        //     thumbnail: "/assets/sms/4.jpeg",
+        //     link: "/",
+        //     category: "graphics",
+        //     group: "sms"
+        // },
         {
             title: "Some Text",
             thumbnail: "/assets/brand_promotion/5.jpeg",
@@ -278,13 +278,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "ch"
         },
-        {
-            title: "Some Text",
-            thumbnail: "/assets/event_and_church/11.jpeg",
-            link: "/",
-            category: "graphics",
-            group: "ch"
-        },
+        // {
+        //     title: "Some Text",
+        //     thumbnail: "/assets/event_and_church/11.jpeg",
+        //     link: "/",
+        //     category: "graphics",
+        //     group: "ch"
+        // },
         {
             title: "Some Text",
             thumbnail: "/assets/event_and_church/12.jpeg",
@@ -313,13 +313,13 @@ const Works = ({page}) => {
             category: "graphics",
             group: "sms"
         },
-        {
-            title: "Some Text",
-            thumbnail: "/assets/event_and_church/14.jpeg",
-            link: "/",
-            category: "graphics",
-            group: "ch"
-        },
+        // {
+        //     title: "Some Text",
+        //     thumbnail: "/assets/event_and_church/14.jpeg",
+        //     link: "/",
+        //     category: "graphics",
+        //     group: "ch"
+        // },
         {
             title: "Some Text",
             thumbnail: "/assets/sms/12.jpeg",

@@ -76,25 +76,25 @@ const PlatformManagement = () => {
                     nameOfOrg={"CUAPASS"}
                     category={"ACADEMIC DEPARTMENT"}
                     bodyTextP1={"As the Public Relations Officer (P.R.O) of CUAPASS (Caleb University Association of Pure and Applied Science Students), I managed the TikTok presence for CUAPASS, where I developed and implemented content strategies aligned with the academic and social standards of Caleb University, Imota, Lagos State. My role focused on using digital media to inform, inspire, and connect undergraduate students, postgraduates, and alumni."}
-                    bodyTextP2={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University.<"}
+                    bodyTextP2={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University"}
                     approachText={"I combined trend-driven content with data insights to produce engaging videos that consistently delivered strong analytics. Also, blended creativity with performance tracking, using analytics to shape content that resonated with the student community."}
                     platform={"Tiktok"}
-                    platformText={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University."}
+                    platformText={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University"}
                     
                 />
 
                 <hr className='border border-secondary' />
 
                 <CaseStudy 
-                    logo={"/assets/case/bysisters/bys.jpeg"}
+                    logo={"/assets/case/bysisters/bys.png"}
                     images={bysistersImages}
-                    nameOfOrg={"BYSISTERS"}
-                    category={"RELIGIOUS DEPARTMENT"}
-                    bodyTextP1={"As the Public Relations Officer (P.R.O) of Beautiful City of Yaweh, I managed the Instagram presence for Beautiful City of Yaweh, where I developed and implemented content strategies aligned with the academic and social standards of Caleb University, Imota, Lagos State. My role focused on using digital media to inform, inspire, and connect undergraduate students, postgraduates, and alumni."}
-                    bodyTextP2={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University.<"}
-                    approachText={"I combined trend-driven content with data insights to produce engaging videos that consistently delivered strong analytics. Also, blended creativity with performance tracking, using analytics to shape content that resonated with the student community."}
+                    nameOfOrg={"BCYSISTERS"}
+                    category={"RELIGIOUS ORGANIZATION"}
+                    bodyTextP1={"As the Head of Publicity of Beautiful City of Yaweh, I managed the Instagram presence for Beautiful City of Yaweh, where I developed and implemented content strategies aligned with the spiritual standard of the ministry of Caleb University, Imota, Lagos State. My role focused on using digital media to inform, inspire, and connect undergraduate students, postgraduates, and alumni."}
+                    bodyTextP2={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community."}
+                    approachText={"I combined trend-driven content with data insights to produce engaging videos that consistently delivered strong analytics."}
                     platform={"Instagram"}
-                    platformText={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community within and beyond Caleb University."}
+                    platformText={"My responsibilities included creating and editing engaging content, crafting meaningful captions, disseminating information, and managing the platform to enhance visibility and foster a strong sense of community."}
                     
                 />
 
