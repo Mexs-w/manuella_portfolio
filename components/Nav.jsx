@@ -56,7 +56,7 @@ const Nav = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-5 py-2 bg-primary text-white rounded-full font-medium"
+              className="px-5 py-2 bg-[#5B2D8B] text-white rounded-full font-medium"
             >
               Book a call
             </motion.button>
@@ -100,7 +100,7 @@ const Nav = () => {
             </ul>
 
             <Link href="tel:+2348051185971">
-              <button className="mt-6 w-full px-5 py-3 bg-primary text-white rounded-full font-medium">
+              <button className="mt-6 w-full px-5 py-3 bg-[#5B2D8B] text-white rounded-full font-medium">
                 Book a call
               </button>
             </Link>

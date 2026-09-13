@@ -27,7 +27,7 @@ const CaseStudy = ({logo, category, nameOfOrg, bodyTextP1, bodyTextP2, approachT
 
   return (
     <div>
-            <div className='grid md:grid-cols-[0.5fr_3fr] itemsstart gap5 md:justify-start justifycenter bg[red] py-8 md:px-10 bg-primary rounded-2xl my-10 relative'>
+            <div className='grid md:grid-cols-[0.5fr_3fr] itemsstart gap5 md:justify-start justifycenter bg[red] py-8 md:px-10 bg-[#5B2D8B] rounded-2xl my-10 relative'>
                 <div className='md:h-50 md:w-50 h-25 w-25 rounded-full overflow-hidden border border-white mx-auto md:mx-0'>
                     <img src={logo} className='object-cover h-full w-full' />
                 </div>
@@ -42,19 +42,19 @@ const CaseStudy = ({logo, category, nameOfOrg, bodyTextP1, bodyTextP2, approachT
                 <h3 className='absolute left-[40%] top-[40%] text-7xl text-white opacity-10 -rotate-12'>{nameOfOrg}</h3>
             </div>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-16'>
-                <div className='py-6 px-10 bg-primary text-white rounded-2xl relative overflow-hidden'>
+                <div className='py-6 px-10 bg-[#5B2D8B] text-white rounded-2xl relative overflow-hidden'>
                     <h2 className='font-bold text-2xl my-3 text-center md:text-start capitalize'>{platform} Management</h2>
                     <p>{platformText}</p>
                 <h3 className='absolute left-[40%] top-[40%] text-7xl text-white opacity-10 -rotate-12'>{nameOfOrg}</h3>
 
                 </div>
-                <div className='py-6 px-10 bg-primary text-white rounded-2xl relative overflow-hidden'>
+                <div className='py-6 px-10 bg-[#5B2D8B] text-white rounded-2xl relative overflow-hidden'>
                     <h2 className='font-bold text-2xl my-3 text-center md:text-start'>Approach</h2>
                     <p>{approachText}</p>
                 <h3 className='absolute left-[40%] top-[40%] text-7xl text-white opacity-10 -rotate-12'>CUAPASS</h3>
 
                 </div>
-                <div className='py-6 px-10 bg-primary text-white rounded-2xl relative overflow-hidden'>
+                <div className='py-6 px-10 bg-[#5B2D8B] text-white rounded-2xl relative overflow-hidden'>
                     <h2 className='font-bold text-2xl my-3 text-center md:text-start'>Analytics Results</h2>
                     <p>Below are selected key analytics reflecting the reach, engagement, and overall performance of the {nameOfOrg} {platform} page during my tenure as P.R.O</p>
                 <h3 className='absolute left-[40%] top-[40%] text-7xl text-white opacity-10 -rotate-12'>{nameOfOrg}</h3>

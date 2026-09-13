@@ -51,7 +51,7 @@ const Services = () => {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-primary/85" />
+        <div className="absolute inset-0 bg-[#5B2D8B]/85" />
       </div>
 
       <div className="max-w-7xl w-full z-10">

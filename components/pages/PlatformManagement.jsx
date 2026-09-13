@@ -66,7 +66,7 @@ const PlatformManagement = () => {
                     <h2 className="font-heading text-4xl text-primary">
                         Platform Management
                     </h2>
-                    <hr className="my-2 h-0.5 w-16 mx-auto rounded-full bg-secondary border-0" />
+                    <hr className="my-2 h-0.5 w-16 mx-auto rounded-full bg-[#F5C400] border-0" />
                 </motion.div>
 
 
